@@ -34,30 +34,6 @@ def get_playlist_id():
     except requests.exceptions.RequestException as e:
         raise e
 
-# def title_name():
-#     try:
-#         url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q={user_input}&key={API_KEY}"
-
-#         response = requests.get(url)
-
-#         response.raise_for_status()
-
-#         # print(response)
-
-#         data = response.json()
-
-#         # print(json.dumps(data, indent=4))
-
-#         # for i in data['items']:
-#         #     print("i : ",i['snippet']['title'])
-
-#         # channel_items = data['items'][0]['snippet']['thumbnails']['default']['url']
-#         title_name = data['items'][0]['snippet']['title']
-#         print("title_name : ",title_name)
-#         return title_name
-#     except requests.exceptions.RequestException as e:
-#         raise e
-#         # print("server is buy right now",)
 if __name__ == "__main__":
 
     print(get_playlist_id())
@@ -72,12 +48,5 @@ if __name__ == "__main__":
 
 
 
-# print(something)
 
-# def hello():
-#     tittle=tittle_name(user_input,API_KEY)
-#     print("tittle : ",tittle)
-
-
-# hello()
 
